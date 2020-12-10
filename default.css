@@ -86,6 +86,16 @@ box-shadow: 1px 0px 25px 5px rgba(0,0,0,0.6);
 .left-wrapper{
     grid-area: left-col;
 
+    
+}
+
+#profile-pic{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: var(--borderColor);
+    margin: 20px;
+    border-radius: 15px;
 }
 
 .right-wrapper{
