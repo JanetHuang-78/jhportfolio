@@ -1,0 +1,159 @@
+:root{
+    --mainColor:#eaeaea;
+    --secondColor:#fff;
+
+    --borderColor:#c1c1c1;
+    --deepBorderColor: red;
+
+    --mainText: black;
+    --secondText:#4b5156; 
+}
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--mainText);
+    font-family: 'Fjalla One', sans-serif;
+    
+}
+
+p, li, span, label, input, textarea{
+    color: var(--secondText);
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+.s1{
+    background-color: var(--mainColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+
+}
+
+.s2{
+    background-color: var(--secondColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.greeting-wrapper{
+    text-align: center;
+    align-content: center;
+    min-height: 10em;
+}
+
+.intro-wrapper{
+    background-color: var(--secondColor);
+    text-align: center;
+    border-radius: 5px 5px 0px 0px;
+
+    -webkit-box-shadow: 1px 0px 25px 5px rgba(0,0,0,0.6); 
+box-shadow: 1px 0px 25px 5px rgba(0,0,0,0.6);
+
+    
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
+    grid-template-areas: 
+    'nav-col nav-col'
+    'left-col right-col';
+    
+}
+
+.nav-wrapper{
+    grid-area: nav-col;
+    border-bottom: 1px solid var(--borderColor);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--mainColor);
+    border-radius: 5px 5px 0px 0px;
+}
+
+.left-wrapper{
+    grid-area: left-col;
+
+}
+
+.right-wrapper{
+    grid-area: right-col;
+    
+}
+
+.dot-wrapper{
+    display: flex;
+    padding: 10px;
+}
+
+.browser-dot{
+    background-color: black;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    margin: 5px;
+    border-radius: 50%;
+
+    -webkit-box-shadow: -1px 1px 5px -1px rgba(0,0,0,0.75); 
+    box-shadow: -1px 1px 5px -1px rgba(0,0,0,0.61);
+    
+}
+
+#dot-1{
+    background-color: coral;
+}
+
+#dot-2{
+    background-color: cornflowerblue;
+}
+
+#dot-3{
+    background-color: gold;
+}
+
+#navigation{
+    font-weight: 700;
+    margin: 0px;
+    padding: 10px;
+    display: flex;
+}
+
+#navigation li{
+    margin: 5px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #17a2b8;
+}
+
+ul, li{
+    list-style: none;
+}
+
+
+h1{font-size: 56px;}
+h2{font-size: 36px;}
+h3{font-size: 28px;}
+h4{font-size: 24px;}
+h5{font-size: 20px;}
+h6{font-size: 15px;}
+
+@media screen and (max-width:1200px){
+    .main-container{
+        width: 95%;
+    }
+}
