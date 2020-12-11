@@ -221,13 +221,14 @@ p, li, span, label, input, textarea{
     justify-content: center;
     padding-bottom: 40px;
     border-radius: 5px 5px 5px 5px;
+    background-color: var(--secondColor);
 
     -webkit-box-shadow: 1px 0px 25px 5px rgba(0,0,0,0.6); 
     box-shadow: 1px 0px 25px 5px rgba(0,0,0,0.6);
 }
 
 .projects{
-    border: 1px solid var(--borderColor);
+    border: 2px solid var(--borderColor);
     margin: 30px 10px;
 
     -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75); 
