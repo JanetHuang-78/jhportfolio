@@ -202,7 +202,7 @@ p, li, span, label, input, textarea{
 
 #preview{
     padding-top: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     width: 500px;
     border-bottom:1px solid var(--borderColor);
 }
