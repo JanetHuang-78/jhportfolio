@@ -75,6 +75,8 @@ p, li, span, label, input, textarea{
     
 }
 
+
+
 .nav-wrapper{
     grid-area: nav-col;
     border-bottom: 1px solid var(--borderColor);
@@ -213,8 +215,51 @@ p, li, span, label, input, textarea{
 }
 
 .projects-wrapper{
-    -webkit-box-shadow: 1px 0px 25px 5px rgba(0,0,0,0.6); 
-    box-shadow: 1px 0px 25px 5px rgba(0,0,0,0.6);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.projects{
+    border: 1px solid var(--borderColor);
+
+    -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75); 
+    box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+}
+
+.projects-preview{
+    background-color: #fff;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+}
+
+.thumnail{
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#project-title{
+    text-align: center;
+}
+
+.projects-name{
+    margin: 0;
+    padding: 15px;
+}
+
+.projects-content{
+    font-weight: lighter;
+    padding: 5px 20px 5px 20px;
+    margin: 15px;
+}
+
+.link-wrapper{
+    display: flex;
+    justify-content: space-between;
 }
 
 a{
