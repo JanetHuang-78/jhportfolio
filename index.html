@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Do+Hyeon&family=Montserrat:wght@300&family=Nerko+One&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" type="text/css" href="default.css">
+
+    <link id="themeStyle" rel="stylesheet" type="text/css" href="">
 </head>
 <body>
     <section class="s1">
@@ -36,10 +38,10 @@
                     <h5 id="personal-theme">Personal Theme</h5>
                     
                     <div class="theme-option-wrapper">
-                        <div id="theme-dot2" class="theme-option-dot"></div>
-                        <div id="theme-dot3" class="theme-option-dot"></div>
-                        <div id="theme-dot4" class="theme-option-dot"></div>
-                        <div id="theme-dot5" class="theme-option-dot"></div>
+                        <div data-mode="blue" id="theme-dot1" class="theme-option-dot"></div>
+                        <div data-mode="salmon" id="theme-dot2" class="theme-option-dot"></div>
+                        <div data-mode="khaki" id="theme-dot3" class="theme-option-dot"></div>
+                        <div data-mode="green" id="theme-dot4" class="theme-option-dot"></div>
 
                     </div>
                     <h6 id="theme-note">Theme option will be saved for your next visit!</h6>
@@ -139,15 +141,18 @@
 
             <div class="form-wrapper">
         
-            <form class="form-mail">
-                <label>Name:</label>
+            <form class="contact-form">
+                <label class="label-format">Name:</label>
                 <input type="text" name="name" class="input-field">
 
-                <label>Subject:</label>
+                <label class="label-format">Subject:</label>
                 <input type="text" name="subject" class="input-field">
 
-                <label>Email:</label>
+                <label class="label-format">Email:</label>
                 <input type="text" name="email" class="input-field">
+
+                <label class="label-format">Message:</label>
+                <textarea name="message" id="" cols="50" rows="10"></textarea>
 
                 <input id="submit-btn" type="submit" value="send">
             </form>

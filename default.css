@@ -10,7 +10,7 @@
 
     --themeDotColor:#24292e;
 
-    --btnColor: #0000CD;
+    --btnColor: gray;
 
 }
 
@@ -18,6 +18,10 @@
 html, body{
     padding: 0;
     margin: 0;
+}
+
+body *{
+    transition: 0.5s;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -182,19 +186,19 @@ p, li, span, label, input, textarea{
     height: 25px;
 }
 
-#theme-dot2{
+#theme-dot1{
     background-color: cadetblue;
 }
 
-#theme-dot3{
+#theme-dot2{
     background-color: darksalmon;
 }
 
-#theme-dot4{
+#theme-dot3{
     background-color: khaki;
 }
 
-#theme-dot5{
+#theme-dot4{
     background-color: lightgreen;
 }
 
@@ -282,26 +286,45 @@ p, li, span, label, input, textarea{
 }
 
 .form-wrapper{
-    
+
 }
 
-.form-mail{
+.contact-form{
     display: flex;
     flex-direction: column;
-    
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+
+}
+
+.contact-form label{
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.label-format{
+padding-top: 10px;
 }
 
 .input-field{
-
-    width: 80%;
-
+    padding-top: 10px;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid var(--borderColor);
+    margin-bottom: 10px;
 }
 
 #submit-btn{
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 100%;
+    height: 40px;
     color: #fff;
     background-color: var(--btnColor);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
 }
 
 a{
