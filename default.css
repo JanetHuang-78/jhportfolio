@@ -366,4 +366,8 @@ p{font-size: 18px;}
     .right-wrapper{
         justify-content: center;
     }
+
+    .left-wrapper{
+        justify-content: center;
+    }
 }
