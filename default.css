@@ -50,7 +50,7 @@ p, li, span, label, input, textarea{
 }
 
 .main-container{
-    width: 1200px;
+    width: 95%;
     margin: 10px auto;
     
 }
@@ -107,8 +107,8 @@ p, li, span, label, input, textarea{
 #profile-pic{
     display: block;
 
-    width: 300px;
-    height: 400px;
+    width: 80%;
+    height: 95%;
     object-fit: cover;
     border: 2px solid var(--borderColor);
     margin: 20px auto;
@@ -211,8 +211,13 @@ p, li, span, label, input, textarea{
 #preview{
     padding-top: 10px;
     padding-bottom: 30px;
-    width: 500px;
+    width: 400px;
     border-bottom:1px solid var(--borderColor);
+}
+
+.intro{
+    width: 95%;
+    text-align: center;
 }
 
 #preview-skill{
